@@ -11,12 +11,13 @@ body{
     margin-top: 50px; 
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    background: url('../img/tile.jpg') top left repeat;
-
+    background: url('../img/tile.jpg');
+    background-size: cover;
+    background-position: center; 
 }
 
 section#hero{
-    background: url('../img/hero_img.jpg') rgb(150,200,200);
+    /*background: url('../img/hero_img.jpg') rgb(150,200,200);*/
     background-size: cover;
     background-position: center;
     
