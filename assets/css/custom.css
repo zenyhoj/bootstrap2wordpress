@@ -45,6 +45,9 @@ h4{
     background-color: #dd5638;
     border-color: #d95131;
 }
+img{
+    max-width: 100%;
+}
 
 #hero{
     background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
@@ -67,6 +70,7 @@ h4{
 margin: 30px 0 60px;
 text-align: center;
 }
+
 
 #price-timeline .price{
     display: inline-block;
@@ -114,5 +118,17 @@ text-align: center;
     
 } 
 
+/*#optin LAYOUT*/
+#optin{
+    background: #3e4249;
+    color: white;
+    padding: 20px 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility; 
+    font-size: 1.2em;
+}
 
-
+#optin p{
+    margin: 7px 0 0 0;
+    text-align: center;
+}
