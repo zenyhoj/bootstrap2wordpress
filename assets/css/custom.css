@@ -182,6 +182,13 @@ section h3{
     color: white;
 }
 
+/*Instructor section*/
+#instructor{
+                                            /*60% horizontal position, -10px top */
+    background: url('../img/brad-elvis.png') 90% -10px no-repeat;
+}
+
+
 /*Custom icon sprites*/
 /*create photoshop images in a single line at equal size*/
 i.ci{
