@@ -169,6 +169,19 @@ section h3{
     text-align: center;
 }
 
+/*project features*/
+#project-features{
+    text-align: center;
+}
+
+/*featurette section*/
+#featurette{
+    background: url('../img/stuff-bg.jpg') 50% 100% repeat fixed;
+    background-size: cover; /*resized the image as the viewport changes*/
+    text-align: center;
+    color: white;
+}
+
 /*Custom icon sprites*/
 /*create photoshop images in a single line at equal size*/
 i.ci{
