@@ -1,3 +1,4 @@
+// Parallax Effect
 $(function () {
     //cache the window object
     var $window = $(window);
@@ -22,4 +23,4 @@ $(function () {
 
     });
 
-});
+});//End of Parallax

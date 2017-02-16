@@ -124,7 +124,7 @@ text-align: center;
     
 } 
 
-/*#optin LAYOUT*/
+/*LAYOUT*/
 #optin{
     background: #3e4249;
     color: white;
@@ -138,3 +138,13 @@ text-align: center;
     margin: 7px 0 0 0;
     text-align: center;
 }
+
+section{
+    padding: 80px 0;
+}
+.section-header{
+    text-align: center;
+}
+
+/*Boost your income section*/
+
