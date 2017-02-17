@@ -87,6 +87,23 @@ img{
     background: #db4b39;
 }
 
+blockquote {
+    padding: 0;
+    border: none;
+    font-style: italic;
+    text-align: left;
+}
+
+blockquote cite {
+    display: block;
+    color: #777;
+    margin: 15px 0 0 0;
+}
+
+blockquote:before { /*to fix default left margin for first word*/
+    display: none;
+}
+/*End of Global*/
 
 #hero{
     background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
@@ -257,6 +274,22 @@ section h3{
     font-weight: normal;
 }
 
+/*Testimonials Section*/
+
+#kudos {
+    text-align: center;
+}
+
+.testimonial {
+
+    margin-bottom: 60px;
+}
+
+.testimonial img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%
+}
 
 /*Custom icon sprites*/
 /*create photoshop images in a single line at equal size*/
