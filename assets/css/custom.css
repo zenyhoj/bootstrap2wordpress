@@ -55,6 +55,39 @@ img{
     max-width: 100%;
 }
 
+.modal-content{
+    background: url('../img/tile.jpg') top left repeat;
+}
+
+
+/*CSS3 Shapes*/
+/*Coding the social media icon shapes*/
+.badge.social {
+    background: #ccc;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 42px;
+    margin: 0 5px 20px 0;
+    padding: 0;
+    -webkit-border-radius: 50%; /*set to 50% due to badge size of 40px only */
+    -moz-border-radius: 50%;
+    border-radius: 50px;
+}
+.badge.social.twitter:hover {
+    background: #55acee;
+}
+
+.badge.social.facebook:hover {
+    background: #3b5998;
+}
+
+.badge.social.gplus:hover {
+    background: #db4b39;
+}
+
+
 #hero{
     background: url('../img/hero-bg.jpg') 50% 0 repeat fixed;
     min-height: 500px;
@@ -108,6 +141,7 @@ text-align: center;
     bottom: -35px;
     left: 50%;
     margin-left: -35px;
+    
 
 }
 
@@ -123,6 +157,8 @@ text-align: center;
     padding-top: 5px;
     
 } 
+
+
 
 /*LAYOUT*/
 #optin{
@@ -186,6 +222,39 @@ section h3{
 #instructor{
                                             /*60% horizontal position, -10px top */
     background: url('../img/brad-elvis.png') 90% -10px no-repeat;
+}
+
+#instructor h2 {
+    margin: 0 0 20px;
+}
+
+#instructor .num {
+    display: table; /*set parent display to table*/
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    line-height: 24px;
+    height: 140px;
+    width: 140px;
+    text-align: center;
+    background: #dd5638;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility; 
+}
+
+/*Vertically align content within an element*/
+
+#instructor .num .num-content {
+    display: table-cell; /*by default, display set to display: block, set #instructor .num to display: table in order for child element .num-content to work*/
+    vertical-align: middle;
+}
+#instructor .num span {
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
 }
 
 
