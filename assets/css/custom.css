@@ -39,6 +39,14 @@ h4{
     font-size: 18px;
 }
 
+p {
+
+    margin: 0 0 15px;
+}
+p.lead {
+    font-weight: normal;
+}
+
 /*Global settings for links*/
 a:link a:visited {
     color: #dd5638;
@@ -207,18 +215,12 @@ text-align: center;
 
 
 /*LAYOUT*/
-#optin{
-    background: #3e4249;
-    color: white;
-    padding: 20px 0;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility; 
-    font-size: 1.2em;
-}
 
-#optin p{
-    margin: 7px 0 0 0;
-    text-align: center;
+/*+ means row class after a row class */
+.row + .row {
+    margin-top: 20px;
+
+
 }
 
 section{
@@ -235,6 +237,21 @@ section h2{
 section h3{
     margin: 30px 0 10px;
 }
+
+#optin{
+    background: #3e4249;
+    color: white;
+    padding: 20px 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility; 
+    font-size: 1.2em;
+}
+
+#optin p{
+    margin: 7px 0 0 0;
+    text-align: center;
+}
+
 
 /*who benefits section*/
 #who-benefits{
@@ -397,4 +414,48 @@ footer li.signup-link a {
 footer li.signup-link a:hover {
 
     font-weight: bold;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width : 991px) {
+
+    #instructor .container {
+
+        background: rgba(255,255,255,0.8);
+        padding: 20px;
+    }
+
+}
+/*tabs*/
+@media screen and (max-width : 768px) {
+    .logo {
+        width: 50%;
+    }
+
+    #optin p {
+
+        margin: 0 0 10px;
+    }
+
+    #featurette iframe {
+
+        height: 240px;
+    }
+}
+
+/*iphone 5 & up*/
+@media screen and (max-width : 568px) {
+
+    #instructor .num {
+        height: 80px;
+        width: 80px;
+        font-size: 20px;
+    }
+
+    #instructor .num span{
+        font-size: 16px;
+    }
+
 }
