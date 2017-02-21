@@ -39,6 +39,17 @@ h4{
     font-size: 18px;
 }
 
+/*Global settings for links*/
+a:link a:visited {
+    color: #dd5638;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #c9302c;
+
+}
+
 button, input, .btn, a.btn{
     color: white;
     -webkit-font-smoothing: antialiased;
@@ -348,4 +359,42 @@ i.ci{
 
 #signup .btn {
     font-size: 24px;
+}
+
+
+/*footer section*/
+
+footer {
+
+    background: #3e4249;
+    padding: 20px 0 10px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a:link, footer a:visited {
+
+    color: white;
+}
+
+footer a:hover {
+
+    color: #dd5638;
+    
+}
+
+footer li.signup-link a {
+
+    color: #dd5638;
+}
+
+footer li.signup-link a:hover {
+
+    font-weight: bold;
 }
