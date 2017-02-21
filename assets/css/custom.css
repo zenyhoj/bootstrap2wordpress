@@ -48,7 +48,8 @@ p.lead {
 }
 
 /*Global settings for links*/
-a:link a:visited {
+
+a:link, a:visited {
     color: #dd5638;
 }
 
