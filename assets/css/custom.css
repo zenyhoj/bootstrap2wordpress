@@ -67,10 +67,11 @@ button, input, .btn, a.btn{
 .btn{
     font-weight: bold;
 }
-/*
+
+/*removes blue outline of a button after clicked*/
 button.btn:focus {
     outline: none !important;
-}*/
+}
 
 
 .btn-danger{
@@ -81,12 +82,15 @@ button.btn:focus {
 .btn-success {
     background: #79b044;
     border: none;
+    outline: none;
 }
 
 .btn-success:hover {
     background: #6a9b3d;
     border-color: #6a9b3d;
 }
+
+
 
 
 img{
