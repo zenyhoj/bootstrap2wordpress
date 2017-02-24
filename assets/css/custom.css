@@ -375,7 +375,7 @@ section h3{
     border-radius: 50%
 }
 
-/*Custom icon sprites*/
+/*========================Custom icon sprites==============================*/
 /*create photoshop images in a single line at equal size*/
 i.ci{
     display: inline-block;
@@ -392,8 +392,36 @@ i.ci{
 .ci.ci-instructor   {background-position: -160px, 0;}
 .ci.ci-device       {background-position: -200px, 0;}
 
-/*Signup Section*/
+/*========FORMS=========*/
+label {
+    display: block;
+    font-weight: bold;
+}
 
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"], 
+textarea {
+
+color: #666;
+padding: 10px 5px 10px;
+border: 1px solid #ccc;
+-webkit-webkit-border-radius: 3px;
+-moz-webkit-border-radius: 3px;
+border-radius: 3px;
+display: block;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+width: 100%;
+padding: 6px 12px;
+}
+/*========END OF FORMS=========*/
+
+
+/*==========Signup Section===========*/
 #signup {
 
     background: url('../img/hipster-stuff.jpg') center center repeat fixed; 
@@ -456,7 +484,7 @@ footer li.signup-link a:hover {
 
 /*==========================BLOG PAGE===================*/
 
-.post {
+.post, .widget {
     position: relative;
     border: 1px solid #ddd;
     background: white;
@@ -499,21 +527,48 @@ footer li.signup-link a:hover {
     padding-left: 0;
 }
 
+/*=============WIDGETS=====================================*/
+.widget {
+    padding: 20px;
+}
+
+.widget h4 {
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid rgba(137,132,132,0.4);
+}
+
+.widget ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.widget ul li {
+    margin: 0 0 5px;
+}
+
+.widget ul li:hover {
+    position: relative;
+    left: 1px;
+    font-weight: bold;
+}
+
+
 /*============COMMENTS=====================================*/
 .post-comments-badge {
-
-    height: 70px;
-    width: 70px;
-    position: absolute;
-    top: 25px;
-    right: 20px;
-    border: none;
-    -webkit-webkit-border-radius: 100%;
-    -moz-webkit-border-radius: 100%;
-    border-radius: 100%;
-    background: #79b044;
-    display: center;
-    display: table;
+	height: 70px;
+	width: 70px;
+	position: absolute;
+	top: 25px;
+	right: 20px;
+	border: none;
+	-webkit-webkit-border-radius: 100%;
+	-moz-webkit-border-radius: 100%;
+	border-radius: 100%;
+	background: #79b044;
+	display: center;
+	display: table;
 }
 
 .post-comments-badge a {
