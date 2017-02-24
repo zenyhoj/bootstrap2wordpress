@@ -7,6 +7,7 @@ Blue gray: #3e4249
 
 /*General*/
 
+
 body{
     margin-top: 50px; 
     font-family: 'Raleway', Helvetica, sans-serif;
@@ -244,11 +245,11 @@ section h3{
 
 /*=================BLOG FEATURE IMAGE================*/
 
+/*to have 40px top & bottom for blog page*/
 #primary {
     padding: 40px 0 40px;
     margin-bottom: 0;
-    /*padding-top: 40px;
-    padding-bottom: 40px;*/
+    
 }
 
 .feature-image {
