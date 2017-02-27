@@ -5,7 +5,7 @@ Salmon: #dd5638
 Blue gray: #3e4249
 */
 
-/*General*/
+/*================ GENERAL ============================*/
 
 
 body{
@@ -17,7 +17,7 @@ body{
     background-position: center; */
 }
 
-/*Global*/
+/*=================== GLOBAL CSS ======================*/
 h1,h2,h3,h4,h5,h6{
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
@@ -48,8 +48,11 @@ p.lead {
     font-weight: normal;
 }
 
-/*Global settings for links*/
+/*========================= Global settings for links =======================*/
 
+li.active {
+    border-bottom: 2px solid #6a9b3d;
+}
 a:link, a:visited {
     color: #dd5638;
 }
@@ -241,9 +244,13 @@ section h3{
     margin: 30px 0 10px;
 }
 
+section.main-content {
+    padding: 0;
+}
 
 
-/*=================BLOG FEATURE IMAGE================*/
+
+/*================= BLOG FEATURE IMAGE ================*/
 
 /*to have 40px top & bottom for blog page*/
 #primary {
@@ -257,7 +264,7 @@ section h3{
     width: 100%;
 }
 
-/*feature image fallback*/
+
 .feature-image-default {
     background: url('../img/stuff-feature.jpg') no-repeat;
     background-size: cover;
@@ -320,7 +327,7 @@ section h3{
 
 /*Instructor section*/
 #instructor{
-                                            /*60% horizontal position, -10px top */
+                                            /*90% horizontal position, -10px top */
     background: url('../img/brad-elvis.png') 90% -10px no-repeat;
 }
 
@@ -392,7 +399,7 @@ i.ci{
 .ci.ci-instructor   {background-position: -160px, 0;}
 .ci.ci-device       {background-position: -200px, 0;}
 
-/*========FORMS=========*/
+/*=========================== FORMS  =====================================*/
 label {
     display: block;
     font-weight: bold;
@@ -418,7 +425,7 @@ box-sizing: border-box;
 width: 100%;
 padding: 6px 12px;
 }
-/*========END OF FORMS=========*/
+/*=========== END OF FORMS ==========*/
 
 
 /*==========Signup Section===========*/
@@ -484,7 +491,7 @@ footer li.signup-link a:hover {
 
 /*==========================BLOG PAGE===================*/
 
-.post, .widget {
+.post, .widget, #comments {
     position: relative;
     border: 1px solid #ddd;
     background: white;
@@ -493,8 +500,11 @@ footer li.signup-link a:hover {
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
+
 .post header,
-.post .post-excerpts {
+.post .post-excerpts,
+.post .post-body,
+#comments .comments-wrap{
     padding: 20px;
 }
 
@@ -592,9 +602,68 @@ footer li.signup-link a:hover {
 
 }
 
+#comments h3 {
+
+    text-align: center;
+}
+
+#comments h4 {
+    font-size: 1.3em;
+}
+
+#comments ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#comments ol li {
+    background: rgba(0,0,0,0.02);
+    padding: 10px 20px;
+    margin: 10px 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.03);
+
+}
+
+#comments ol li ol.children {
+    padding: 0;
+    list-style: none;
+    font-size: 0.96em;
+}
+
+#leave-comment {
+    margin: 40px 0 0;
+    padding: 20px 0 0;
+    border-top: solid 1px #eee;
+}
 
 
-/*MEDIA QUERIES*/
+/*======post========*/
+.comment-form-submit input {
+    color: black;
+}
+
+.comment-form-submit input:hover {
+    font-weight: bold;
+}
+
+/*============ RESOURCES ===========*/
+.resource {
+    width: 31.33333333%;
+    float: left;
+    margin: 0 3% 40px 0;
+}
+/*selects every 3rd child element in a resource class and set a style*/
+.resource:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+
+/*====================== MEDIA QUERIES =====================*/
 
 @media screen and (max-width : 991px) {
 
@@ -620,6 +689,12 @@ footer li.signup-link a:hover {
 
         height: 240px;
     }
+
+    .resource {
+        width: 48%;
+        margin-right: 2%;
+        /*min-height: 800px;*/
+    }
 }
 
 /*iphone 5 & up*/
@@ -633,6 +708,12 @@ footer li.signup-link a:hover {
 
     #instructor .num span{
         font-size: 16px;
+    }
+
+    .resource {
+        width: 100%;
+        margin-right: 0;
+        /*min-height: 0;*/
     }
 
 }
