@@ -30,44 +30,6 @@ h1{
 
 h2{
     margin: 0 0 40px;
-}
-
-h3{
-    margin: 20px 0;
-}
-
-h4{
-    font-size: 18px;
-}
-
-p {
-
-    margin: 0 0 15px;
-}
-p.lead {
-    font-weight: normal;
-}
-
-/*========================= Global settings for links =======================*/
-
-li.active {
-    border-bottom: 2px solid #6a9b3d;
-}
-a:link, a:visited {
-    color: #dd5638;
-}
-
-a:hover {
-    text-decoration: none;
-    color: #c9302c;
-
-}
-
-button, input, .btn, a.btn{
-    color: white;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility; 
-}
 .btn{
     font-weight: bold;
 }
