@@ -17,7 +17,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap to Wordpress | Resouces Page</title>
+    <title>Contact | Bootstrap to Wordpress</title>
     <!--Bootstrap core and custom css-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/custom.css">
@@ -31,7 +31,7 @@
 
 </head>
 
-<body class="full-width resources">
+<body class="full-width contacts">
 <header class="site-header" role="banner">
         <!-- NAVBAR 
         =============================================-->
@@ -52,8 +52,8 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="blog.html">Blog</a></li>
-                            <li class="active"><a href="resources.html">Resources</a></li>
-                            <li><a href="contacts.html">Contact</a></li>
+                            <li><a href="resources.html">Resources</a></li>
+                            <li class="active"><a href="contacts.html">Contacts</a></li>
                         </ul>
                         <!--nav-->
                     </div>
@@ -70,55 +70,44 @@
     <!--====FEATURE IMAGE=================-->
 
     <section class="feature-image feature-image-default" data-type="background" data-speed="2">
-        <h1 class="page-title">Resources</h1>
+        <h1 class="page-title">Contacts</h1>
     </section>
 
-    <!--======MAIN CONTENT==================-->
+
+<!--=================MAIN CONTENT===================-->
+
     <div class="container">
         <div class="row" id="primary">
             <div id="content" class="col-sm-12">
                 <section class="main-content">
-                    <p class="lead">
-                        Welcome to bootstrap to wordpress resources! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo porro pariatur sunt rem similique eligendi placeat <strong>voluptatem odio doloribus aperiam,</strong> quidem esse quo, nemo? Tenetur voluptates, obcaecati reiciendis doloribus iste.
-                    </p>
-                    <p>
-                        <em>Please keep in mind that some of the follwing resources are my affiliate links, and should you decide to make a purchase, I will earn a small commission &mdash; at no extra cost to you! I am recommending these resources only because I have found them to be incredibly helpful. Don&rsquo;t spend your money on any products or resources unless you think they will benefit you.</em>
-                    </p>
-
-                    <hr>
-
-                    <div class="resource-row clearfix">
-
-                        <div class="resource">
-                            <img src="assets/img/justhost-logo.jpg" alt="Justhost">
-                            <h3><a href="http://bradhussey.ca/justhost">Justhost</a></h3>
-                            <p>Lorem ipsum dolor sit amet, ipsum maiorum invenire ne est, an apeirian eleifend tincidunt qui, ei est labore aperiam efficiantur. Ut quem insolens constituto ius. An omnis putant dicunt sed. Augue iuvaret eam id, graeci discere ponderum sea ne. At hinc efficiantur theophrastus nec, latine nonumes nostrum ei has. Has sanctus dissentias ex.</p>
-                            <a href="http://bradhussey.ca/justhost" class="btn btn-success">Get started with Justhost</a>
+                    <p class="lead"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing</strong> elit. Laudantium quidem, velit pariatur possimus aperiam ex quibusdam optio. Facere consectetur hic, saepe amet repellendus, possimus debitis quasi, autem non nihil quidem!</p>
+                    <form class="clearfix" role="form">
+                        <!--.row>.col-sm-6*2>.form-group^.form-group.col-sm-12-->
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="contact-name" class="sr-only">Name*</label>
+                                    <input type="text" id="contact-name" class="form-control input-lg" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                     <label for="contact-email" class="sr-only">Email*</label>
+                                    <input type="email" id="contact-email" class="form-control input-lg" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-12">
+                                <label for="contact-messsage" class="sr-only">Your Messsage</label>
+                                    <textarea rows="3" id="contact-message" class="form-control input-lg" placeholder="Your message..."></textarea>
+                            </div>
                         </div>
-                        
-                        <div class="resource">
-                            <img src="assets/img/coda2-logo.jpg" alt="Coda 2">
-                            <h3><a href="http://bradhussey.ca/coda2">Coda 2</a></h3>
-                            <p>Lorem ipsum dolor sit amet, ipsum maiorum invenire ne est, an apeirian eleifend tincidunt qui, ei est labore aperiam efficiantur. Ut quem insolens constituto ius. An omnis putant dicunt sed. Augue iuvaret eam id, graeci discere ponderum sea ne. At hinc efficiantur theophrastus nec, latine nonumes nostrum ei has. Has sanctus dissentias ex. Lorem</p>
-                            <a href="http://bradhussey.ca/justhost" class="btn btn-success">Checkout Coda 2</a>
-                        </div>
-
-                        <div class="resource">
-                            <img src="assets/img/dropbox-logo.jpg" alt="Dropbox">
-                            <h3><a href="http://bradhussey.ca/dropbox">Dropbox</a></h3>
-                            <p>Lorem ipsum dolor sit amet, ipsum maiorum invenire ne est, an apeirian eleifend tincidunt qui, ei est labore aperiam efficiantur. Ut quem insolens constituto ius. An omnis putant dicunt sed. Augue iuvaret eam id, graeci discere ponderum sea ne. At hinc efficiantur theophrastus nec, latine nonumes nostrum ei has. Has sanctus dissentias ex.</p>
-                            <a href="http://bradhussey.ca/getdropbox" class="btn btn-success">Try Using Dropbox</a>
-                        </div>
-                    </div><!--=================== END OF RESOURCES ======================-->
-                    <!--note: not using bootstrap row with regards to dynamic content adding in wordpress; if using bootstrap row possible misalignment will occur-->
-
-                </section><!--main-content-->
-
-            </div><!--content-->
-        </div>
-        
-    </div><!--container-->
-        
+                        <input type="submit" value="Get in touch &raquo;" class="btn btn-info btn-lg pull-right" >
+                    </form>
+                </section>
+            </div>
+          </div>
+    </div>
+<!--====================================-->
 
   <!-- Signup 
         =============================================-->
@@ -153,7 +142,7 @@
                             <li><a href="">Home</a></li>
                             <li><a href="">Blog</a></li>
                             <li><a href="">Resources</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="">Contacts</a></li>
                             <li  class="signup-link"><a href="/">Signup now</a></li>
                         </ul>
                     </nav>

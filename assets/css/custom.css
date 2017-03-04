@@ -425,6 +425,43 @@ box-sizing: border-box;
 width: 100%;
 padding: 6px 12px;
 }
+
+input[type="submit"],
+button[type="submit"] {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2.33;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: none;
+    -webkit-webkit-border-radius: 6px;
+    -moz-webkit-border-radius: 6px;
+    -ms-webkit-border-radius: 6px;
+    -o-webkit-border-radius: 6px;
+    -webkit-webkit-border-radius: 6px;
+    -moz-webkit-border-radius: 6px;
+    -ms-webkit-border-radius: 6px;
+    -o-webkit-border-radius: 6px;
+    border-radius: 6px;
+    background: #aaa;
+   
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+    outline: none;
+    border: none;
+    background: gray;
+}
+ 
 /*=========== END OF FORMS ==========*/
 
 
@@ -642,13 +679,14 @@ footer li.signup-link a:hover {
 
 
 /*======post========*/
-.comment-form-submit input {
-    color: black;
-}
+/*.comment-form-submit input {
+    color:white;
+    background: #aaa;
+}*/
 
-.comment-form-submit input:hover {
-    font-weight: bold;
-}
+/*.comment-form-submit input:hover {
+    font-weight: Fbold;
+}*/
 
 /*============ RESOURCES ===========*/
 .resource {
